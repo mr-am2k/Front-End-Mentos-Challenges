@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+<body>
+  <div class="container">
+    <div class="main-container">
+      <h1>SPLI <br> TTER</h1>
+      <div class="calculator-container">
+        <div class="left-side">
+          <section class="bill-input">
+            <h3 class="bill">
+              Bill
+            </h3>
+            <span class="dollar-sign">$</span> 
+            <input class="input-bill" type="number" onchange="changingPrice(this.value)">
+          </section>
+          <section class="tip-percentage">
+            <h3 class="tip">
+              Select Tip %
+            </h3>
+            <div class="percentage-buttons">
+            <button class="percentage percentage-btn" value="5">5%</button>
+            <button class="percentage percentage-btn" value="10">10%</button>
+            <button class="percentage percentage-btn" value="15">15%</button>
+            <button class="percentage percentage-btn" value="25">25%</button>
+            <button class="percentage percentage-btn" value="50">50%</button>
+            <input class="percentage percentage-input" placeholder="Custom" type="number" onchange="changingPercentage(this.value)">
+            </div>
+          </section>
+          <section class="people-input">
+            <div class="nop-text">
+              <h4 class="number-of-people">
+                Number of People
+              </h4>
+              <p class="zero-case">Can't be zero</p>
+            </div>
+            <div class="nop-input">
+              <span class="person-icon"><i class="fas fa-user-alt"></i></span>
+              <input class="input-for-people" type="number" onchange="changingPeople(this.value)" >
+            </div>
+          </section>
+        </div>
+        <div class="right-side">
+          <section class="tip-amount right-side-text">
+            <h4 class="tip-amount-result">Tip Amount <br> <span class="person-text">/ person</span></h4>
+            <p class="tip-person-output output"></p>
+          </section>
+          <section class="total-tip right-side-text">
+            <h4 class="total">Total <br> <span class="person-text">/ person</span></h4>
+            <p class="total-tip-output output"></p>
+          </section>
+          <section class="reset-button">
+            <button class="reset">RESET</button>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./js/main.js"></script>
+</body>
+</html>

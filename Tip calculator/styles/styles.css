@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+/* Removing number input spinners  */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Space Mono";
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.main-container{
+    width: 1440px;
+    background-color: hsl(185, 41%, 84%);
+    text-align: center;
+    padding: 7% 0%;
+}
+.main-container h1{
+    color: hsl(186, 14%, 43%);
+    line-height: 1.5;
+    letter-spacing: 0.5rem;
+    margin-bottom: 3%;
+}
+.calculator-container{
+    display: flex;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 4%/10%;
+    width: 70%;
+    margin: 0% 15%;
+}
+/* Left side */
+.left-side{
+    width: 50%;
+    margin: 5% 2.5% 5% 5%; 
+    text-align: left;
+    color: hsl(184, 14%, 56%);
+}
+/* Bill section */
+.bill-input{
+    padding-bottom: 5%;
+    position: relative;
+}
+.dollar-sign{
+    color: hsl(184, 14%, 56%);
+    position: absolute;
+    top: 35%;
+    left: 3%;
+    font-size: 1.5rem; 
+}
+
+.input-bill{
+    padding: 1%;
+    width: 98%;
+    background-color: hsl(185, 41%, 84%);
+    border: none;
+    text-align: right;
+    color: hsl(183, 100%, 15%);
+    font-size: 1.5rem;
+    font-family: "Space Mono";
+    border-radius: 5px;
+    font-weight: 700;
+}
+.input-bill:focus{
+    outline-color: hsl(172, 67%, 45%);
+}
+.percentage-buttons{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 2%;
+}
+.percentage{
+    background-color: hsl(183, 100%, 15%);
+    width: 30%;
+    font-family: "Space Mono";
+    font-size: 1.5rem;
+    padding: 2%;
+    margin-bottom: 2%;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    color: hsl(189, 41%, 97%);
+    font-weight: 700;
+}
+.percentage-button{
+    background-color: hsl(172, 67%, 45%) !important;
+    color: hsl(183, 100%, 15%) !important;
+}
+.percentage-input{
+    padding: 0;
+    text-align: right;
+    background-color: hsl(185, 41%, 84%);
+    color: hsl(183, 100%, 15%);
+}
+.percentage-input:focus{
+    outline: auto;
+    outline-color: hsl(172, 67%, 45%) !important;
+}
+.percentage-input::placeholder{
+    text-align: center;
+}
+/* Number of people */
+.people-input{
+    margin-top: 10%;
+}
+.nop-text{
+    padding-bottom: 2%;
+    position: relative;
+}
+.number-of-people{
+    display: inline-block;
+}
+.zero-case{
+    position: absolute;
+    right: 0;
+    display: none;
+    text-align: right;
+    color: #ff0000;
+}
+.nop-input{
+    position: relative;
+}
+.person-icon{
+    color: hsl(184, 14%, 56%);
+    position: absolute;
+    top: 10%;
+    left: 3%;
+    font-size: 1.5rem; 
+}
+.input-for-people{
+    padding: 1%;
+    width: 98%;
+    background-color: hsl(185, 41%, 84%);
+    border: none;
+    text-align: right;
+    color: hsl(183, 100%, 15%);
+    font-size: 1.5rem;
+    font-family: "Space Mono";
+    border-radius: 5px;
+    font-weight: 700;
+}
+.input-for-people:focus{
+    outline-color: hsl(172, 67%, 45%);
+}
+/* Right side */
+.right-side{
+    width: 50%;
+    margin: 5% 5% 5% 2.5%;
+    padding: 5% 5% 5% 2.5%;
+    border-radius: 20px;
+    text-align: left;
+    background-color: hsl(183, 100%, 15%);
+    color: hsl(189, 41%, 97%);
+}
+.right-side-text{
+    margin-left: 5%;
+    padding-bottom: 10%;
+}
+.tip-amount-result{
+    display: inline-block;
+}
+.person-text{
+    color:  hsl(186, 14%, 43%);
+}
+.output{
+    float: right;
+    font-size: 2rem;
+    color: hsl(172, 67%, 45%);
+    font-weight: 700;
+}
+.total{
+    display: inline-block;
+}
+.reset-button{
+    margin-top: 15%;
+    margin-left: 5%;
+}
+.reset{
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: "Space Mono";
+    padding: 3% 0;
+    background-color: hsl(185, 41%, 84%);
+    border: none;
+    color: hsl(183, 100%, 15%);
+    border-radius: 10px;
+}
+/* BREAKPOINTS */
+/* Notebooks */
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+    .calculator-container{
+        display: flex;
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 2%/10%;
+        width: 80%;
+        margin: 0% 10%;
+    }
+    .number-of-people{
+        position:relative;
+        display: block;
+    }
+    .zero-case{
+        text-align: left;
+    }
+    .percentage-input::placeholder{
+        font-size: 1rem;
+    }
+}
+
+/* Tablets */
+@media only screen and (min-width: 481px) and (max-width: 768px){
+    .calculator-container{
+        display: flex;
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 2%/10%;
+        width: 90%;
+        margin: 0% 5%;
+    }
+    .percentage{
+        font-size: 1rem;
+    }
+    .number-of-people{
+        position:relative;
+        display: block;
+    }
+    .zero-case{
+        text-align: left;
+    }
+    .percentage-input::placeholder{
+        font-size: 0.8rem;
+    }
+    .right-side h4{
+        font-size: 0.7rem
+    }
+    .output{
+        font-size: 1.4rem;
+    }
+}
+
+/* Large Screens */
+@media only screen and (max-width: 480px){
+    .container{
+        height: 100%;
+    }
+    .main-container{
+       padding: 0%;
+    }
+    .calculator-container{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0%;
+        width: 100%;
+        border-radius: 20px 20px 0px 0px;
+    }
+    .left-side{
+        width: 100%;
+    }
+    .right-side{
+        width: 100%;
+        margin: 5% 2.5% 5% 5%;
+    }
+    
+}
+
