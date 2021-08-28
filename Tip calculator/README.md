@@ -4,8 +4,7 @@ This is a solution to the [Tip calculator app challenge on Frontend Mentor](http
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: (https://calculator-eight-xi.vercel.app/?fbclid=IwAR2dBSHgiPlCI98Z6AOQXYC5iuUMKyk_Gm1M6Nf4z_-2jL4adDMk1KJBJ-4)
 
 ## My process
 
